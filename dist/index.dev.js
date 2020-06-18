@@ -10,8 +10,8 @@ var _this2 = void 0;
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /**
- * 
  * 前端js工作集合
+ * 2020-06-18
  * author：苏航
  * 思否博客：https://segmentfault.com/u/suhangweb
  * 调用方法如下：
@@ -114,11 +114,11 @@ var getFloatStr = function getFloatStr(num) {
   }
 };
 /**
-* 取银行卡的后四位 
-* @param str
-* @param num
-* @returns {str}
-*/
+ * 取银行卡的后四位 
+ * @param str
+ * @param num
+ * @returns {str}
+ */
 
 
 exports.getFloatStr = getFloatStr;
@@ -128,10 +128,10 @@ var substring = function substring(str, num) {
   return str.substring(str.length - num);
 };
 /**
-* 控制 输入浮点数限制
-* @param e
-* @returns {String || null}
-*/
+ * 控制 输入浮点数限制
+ * @param e
+ * @returns {String || null}
+ */
 
 
 exports.substring = substring;
@@ -140,11 +140,11 @@ var noFixed = function noFixed(e) {
   e.target.value = e.target.value.match(/^\d*(\.?\d{0,1})/g)[0] || null;
 };
 /**
-* 检查是否有这个字符
-* @param str 字符串
-* @param isStr 条件字符
-* @returns {Boolean}
-*/
+ * 检查是否有这个字符
+ * @param str 字符串
+ * @param isStr 条件字符
+ * @returns {Boolean}
+ */
 
 
 exports.noFixed = noFixed;
@@ -154,10 +154,10 @@ var indexOf = function indexOf(str, isStr) {
   return str.indexOf(isStr) != -1 ? true : false;
 };
 /**
-* 截取参数
-* @param {String} name  参数的名字
-* @returns  {Boolean} 参数值
-*/
+ * 截取参数
+ * @param {String} name  参数的名字
+ * @returns  {Boolean} 参数值
+ */
 
 
 exports.indexOf = indexOf;
@@ -173,14 +173,14 @@ var getQueryString = function getQueryString(name) {
   }
 };
 /**
-* 处理文字 多余省略
-*
-* @static
-* @param {*} str 字符传入
-* @param {*} num 最多显示多少字符
-* @returns
-* @memberof utils
-*/
+ * 处理文字 多余省略
+ *
+ * @static
+ * @param {*} str 字符传入
+ * @param {*} num 最多显示多少字符
+ * @returns
+ * @memberof utils
+ */
 
 
 exports.getQueryString = getQueryString;
@@ -193,10 +193,10 @@ var txtHandle = function txtHandle(str, num) {
   }
 };
 /**
-* 添加千位分隔符
-* @param num
-* @returns {Number}
-*/
+ * 添加千位分隔符
+ * @param num
+ * @returns {Number}
+ */
 
 
 exports.txtHandle = txtHandle;
@@ -207,10 +207,10 @@ var milliFormat = function milliFormat(num) {
   });
 };
 /**
-* 判断类型集合
-* @param {*} str 
-* @param {*} type 
-*/
+ * 判断类型集合
+ * @param {*} str 
+ * @param {*} type 
+ */
 
 
 exports.milliFormat = milliFormat;
@@ -290,9 +290,9 @@ var checkStr = function checkStr(str, type) {
   }
 };
 /**
-* 严格的身份证校验
-* @param {*} sId 
-*/
+ * 严格的身份证校验
+ * @param {*} sId 
+ */
 
 
 exports.checkStr = checkStr;
@@ -375,9 +375,9 @@ var isCardID = function isCardID(sId) {
   return true;
 };
 /**
-* 判断邮箱
-* @param {*} s 
-*/
+ * 判断邮箱
+ * @param {*} s 
+ */
 
 
 exports.isCardID = isCardID;
@@ -386,9 +386,9 @@ var isEmail = function isEmail(s) {
   return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(s);
 };
 /**
-* 判断手机号码
-* @param {*} s 
-*/
+ * 判断手机号码
+ * @param {*} s 
+ */
 
 
 exports.isEmail = isEmail;
@@ -397,9 +397,9 @@ var isMobile = function isMobile(s) {
   return /^1[0-9]{10}$/.test(s);
 };
 /**
-* 判断电话号码
-* @param {*} s 
-*/
+ * 判断电话号码
+ * @param {*} s 
+ */
 
 
 exports.isMobile = isMobile;
@@ -408,9 +408,9 @@ var isPhone = function isPhone(s) {
   return /^([0-9]{3,4}-)?[0-9]{7,8}$/.test(s);
 };
 /**
-* 是否url地址
-* @param {*} s 
-*/
+ * 是否url地址
+ * @param {*} s 
+ */
 
 
 exports.isPhone = isPhone;
@@ -419,9 +419,9 @@ var isURL = function isURL(s) {
   return /^http[s]?:\/\/.*/.test(s);
 };
 /**
-* 是否是字符串
-* @param {*} o 
-*/
+ * 是否是字符串
+ * @param {*} o 
+ */
 
 
 exports.isURL = isURL;
@@ -430,9 +430,9 @@ var isString = function isString(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'String';
 };
 /**
-* 是否是数字
-* @param {*} o 
-*/
+ * 是否是数字
+ * @param {*} o 
+ */
 
 
 exports.isString = isString;
@@ -441,9 +441,9 @@ var isNumber = function isNumber(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Number';
 };
 /**
-* 是否是布尔值
-* @param {*} o 
-*/
+ * 是否是布尔值
+ * @param {*} o 
+ */
 
 
 exports.isNumber = isNumber;
@@ -452,9 +452,9 @@ var isBoolean = function isBoolean(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Boolean';
 };
 /**
-* 是否是函数
-* @param {*} o 
-*/
+ * 是否是函数
+ * @param {*} o 
+ */
 
 
 exports.isBoolean = isBoolean;
@@ -463,9 +463,9 @@ var isFunction = function isFunction(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Function';
 };
 /**
-* 是否为null
-* @param {*} o 
-*/
+ * 是否为null
+ * @param {*} o 
+ */
 
 
 exports.isFunction = isFunction;
@@ -474,9 +474,9 @@ var isNull = function isNull(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Null';
 };
 /**
-* 是否为undefined
-* @param {*} o 
-*/
+ * 是否为undefined
+ * @param {*} o 
+ */
 
 
 exports.isNull = isNull;
@@ -485,9 +485,9 @@ var isUndefined = function isUndefined(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Undefined';
 };
 /**
-* 是否是对象
-* @param {*} o 
-*/
+ * 是否是对象
+ * @param {*} o 
+ */
 
 
 exports.isUndefined = isUndefined;
@@ -496,9 +496,9 @@ var isObj = function isObj(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Object';
 };
 /**
-* 是否是数组
-* @param {*} o 
-*/
+ * 是否是数组
+ * @param {*} o 
+ */
 
 
 exports.isObj = isObj;
@@ -507,9 +507,9 @@ var isArray = function isArray(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Array';
 };
 /**
-* 是否是时间
-* @param {*} o 
-*/
+ * 是否是时间
+ * @param {*} o 
+ */
 
 
 exports.isArray = isArray;
@@ -518,9 +518,9 @@ var isDate = function isDate(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Date';
 };
 /**
-* 是否是正则
-* @param {*} o 
-*/
+ * 是否是正则
+ * @param {*} o 
+ */
 
 
 exports.isDate = isDate;
@@ -529,9 +529,9 @@ var isRegExp = function isRegExp(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'RegExp';
 };
 /**
-* 是否错误对象
-* @param {*} o 
-*/
+ * 是否错误对象
+ * @param {*} o 
+ */
 
 
 exports.isRegExp = isRegExp;
@@ -540,9 +540,9 @@ var isError = function isError(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Error';
 };
 /**
-* 是否Symbol函数
-* @param {*} o 
-*/
+ * 是否Symbol函数
+ * @param {*} o 
+ */
 
 
 exports.isError = isError;
@@ -551,9 +551,9 @@ var isSymbol = function isSymbol(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Symbol';
 };
 /**
-* 是否Promise对象
-* @param {*} o 
-*/
+ * 是否Promise对象
+ * @param {*} o 
+ */
 
 
 exports.isSymbol = isSymbol;
@@ -562,9 +562,9 @@ var isPromise = function isPromise(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Promise';
 };
 /**
-* 是否Set对象
-* @param {*} o 
-*/
+ * 是否Set对象
+ * @param {*} o 
+ */
 
 
 exports.isPromise = isPromise;
@@ -573,8 +573,8 @@ var isSet = function isSet(o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Set';
 };
 /**
-* 是否是微信浏览器
-*/
+ * 是否是微信浏览器
+ */
 
 
 exports.isSet = isSet;
@@ -585,8 +585,8 @@ var isWeiXin = function isWeiXin() {
   return ua.match(/microMessenger/i) == 'micromessenger';
 };
 /**
-* 是否是移动端
-*/
+ * 是否是移动端
+ */
 
 
 exports.isWeiXin = isWeiXin;
@@ -595,8 +595,8 @@ var isDeviceMobile = function isDeviceMobile() {
   return /android|webos|iphone|ipod|balckberry/i.test(ua);
 };
 /**
-* 是否是QQ浏览器
-*/
+ * 是否是QQ浏览器
+ */
 
 
 exports.isDeviceMobile = isDeviceMobile;
@@ -605,8 +605,8 @@ var isQQBrowser = function isQQBrowser() {
   return !!ua.match(/mqqbrowser|qzone|qqbrowser|qbwebviewtype/i);
 };
 /**
-* 是否是爬虫
-*/
+ * 是否是爬虫
+ */
 
 
 exports.isQQBrowser = isQQBrowser;
@@ -615,8 +615,8 @@ var isSpider = function isSpider() {
   return /adsbot|googlebot|bingbot|msnbot|yandexbot|baidubot|robot|careerbot|seznambot|bot|baiduspider|jikespider|symantecspider|scannerlwebcrawler|crawler|360spider|sosospider|sogou web sprider|sogou orion spider/.test(ua);
 };
 /**
-* 是否ios
-*/
+ * 是否ios
+ */
 
 
 exports.isSpider = isSpider;
@@ -641,8 +641,8 @@ var isIos = function isIos() {
   }
 };
 /**
-* 是否为PC端
-*/
+ * 是否为PC端
+ */
 
 
 exports.isIos = isIos;
@@ -662,9 +662,9 @@ var isPC = function isPC() {
   return flag;
 };
 /**
-* 去除html标签
-* @param {*} str 
-*/
+ * 去除html标签
+ * @param {*} str 
+ */
 
 
 exports.isPC = isPC;
@@ -673,9 +673,9 @@ var removeHtmltag = function removeHtmltag(str) {
   return str.replace(/<[^>]+>/g, '');
 };
 /**
-* 动态引入js
-* @param {*} src 
-*/
+ * 动态引入js
+ * @param {*} src 
+ */
 
 
 exports.removeHtmltag = removeHtmltag;
@@ -689,9 +689,9 @@ var injectScript = function injectScript(src) {
   t.parentNode.insertBefore(s, t);
 };
 /**
-* 根据url地址下载
-* @param {*} url 
-*/
+ * 根据url地址下载
+ * @param {*} url 
+ */
 
 
 exports.injectScript = injectScript;
@@ -725,10 +725,10 @@ var download = function download(url) {
   return true;
 };
 /**
-* el是否包含某个class
-* @param {*} el 
-* @param {*} className 
-*/
+ * el是否包含某个class
+ * @param {*} el 
+ * @param {*} className 
+ */
 
 
 exports.download = download;
@@ -738,10 +738,10 @@ var hasClass = function hasClass(el, className) {
   return reg.test(el.className);
 };
 /**
-* el添加某个class
-* @param {*} el 
-* @param {*} className 
-*/
+ * el添加某个class
+ * @param {*} el 
+ * @param {*} className 
+ */
 
 
 exports.hasClass = hasClass;
@@ -756,10 +756,10 @@ var addClass = function addClass(el, className) {
   el.className = newClass.join(' ');
 };
 /**
-* el去除某个class
-* @param {*} el 
-* @param {*} className 
-*/
+ * el去除某个class
+ * @param {*} el 
+ * @param {*} className 
+ */
 
 
 exports.addClass = addClass;
@@ -773,9 +773,9 @@ var removeClass = function removeClass(el, className) {
   el.className = el.className.replace(reg, ' ');
 };
 /**
-* 获取滚动的坐标
-* @param {*} el 
-*/
+ * 获取滚动的坐标
+ * @param {*} el 
+ */
 
 
 exports.removeClass = removeClass;
@@ -788,8 +788,8 @@ var getScrollPosition = function getScrollPosition() {
   };
 };
 /**
-* 滚动到顶部
-*/
+ * 滚动到顶部
+ */
 
 
 exports.getScrollPosition = getScrollPosition;
@@ -803,10 +803,10 @@ var scrollToTop = function scrollToTop() {
   }
 };
 /**
-* el是否在视口范围内
-* @param {*} el 
-* @param {*} partiallyVisible 
-*/
+ * el是否在视口范围内
+ * @param {*} el 
+ * @param {*} partiallyVisible 
+ */
 
 
 exports.scrollToTop = scrollToTop;
@@ -826,9 +826,9 @@ var elementIsVisibleInViewport = function elementIsVisibleInViewport(el) {
   return partiallyVisible ? (top > 0 && top < innerHeight || bottom > 0 && bottom < innerHeight) && (left > 0 && left < innerWidth || right > 0 && right < innerWidth) : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
 };
 /**
-* 洗牌算法随机
-* @param {*} arr 
-*/
+ * 洗牌算法随机
+ * @param {*} arr 
+ */
 
 
 exports.elementIsVisibleInViewport = elementIsVisibleInViewport;
@@ -846,9 +846,9 @@ var shuffle = function shuffle(arr) {
   return result;
 };
 /**
-* 劫持粘贴板
-* @param {*} value 
-*/
+ * 劫持粘贴板
+ * @param {*} value 
+ */
 
 
 exports.shuffle = shuffle;
@@ -868,10 +868,10 @@ var copyTextToClipboard = function copyTextToClipboard(value) {
   document.body.removeChild(textArea);
 };
 /**
-* 随机数范围
-* @param {*} min 
-* @param {*} max 
-*/
+ * 随机数范围
+ * @param {*} min 
+ * @param {*} max 
+ */
 
 
 exports.copyTextToClipboard = copyTextToClipboard;
@@ -880,9 +880,9 @@ var random = function random(min, max) {
   return Math.floor(min + Math.random() * (max + 1 - min));
 };
 /**
-* 将阿拉伯数字翻译成中文的大写数字
-* @param {*} num 
-*/
+ * 将阿拉伯数字翻译成中文的大写数字
+ * @param {*} num 
+ */
 
 
 exports.random = random;
@@ -936,9 +936,9 @@ var numberToChinese = function numberToChinese(num) {
   return re;
 };
 /**
-* 将数字转换为大写金额
-* @param {*} Num 
-*/
+ * 将数字转换为大写金额
+ * @param {*} Num 
+ */
 
 
 exports.numberToChinese = numberToChinese;
@@ -1138,10 +1138,10 @@ var changeToChinese = function changeToChinese(Num) {
   return newchar;
 };
 /**
-* 判断一个元素是否在数组中
-* @param {*} arr 
-* @param {*} val 
-*/
+ * 判断一个元素是否在数组中
+ * @param {*} arr 
+ * @param {*} val 
+ */
 
 
 exports.changeToChinese = changeToChinese;
@@ -1150,10 +1150,10 @@ var contains = function contains(arr, val) {
   return arr.indexOf(val) != -1 ? true : false;
 };
 /**
-* 数组排序
-* @param {*} arr 
-* @param {*} type 1：从小到大 2：从大到小 3：随机
-*/
+ * 数组排序
+ * @param {*} arr 
+ * @param {*} type 1：从小到大 2：从大到小 3：随机
+ */
 
 
 exports.contains = contains;
@@ -1177,9 +1177,9 @@ var sort = function sort(arr) {
   });
 };
 /**
-* 数组去重
-* @param {*} arr 
-*/
+ * 数组去重
+ * @param {*} arr 
+ */
 
 
 exports.sort = sort;
@@ -1198,10 +1198,10 @@ var unique = function unique(arr) {
   return newArr;
 };
 /**
-* 求两个集合的并集
-* @param {*} a 
-* @param {*} b 
-*/
+ * 求两个集合的并集
+ * @param {*} a 
+ * @param {*} b 
+ */
 
 
 exports.unique = unique;
@@ -1211,10 +1211,10 @@ var union = function union(a, b) {
   return _this2.unique(newArr);
 };
 /**
-* 求两个集合的交集
-* @param {*} a 
-* @param {*} b 
-*/
+ * 求两个集合的交集
+ * @param {*} a 
+ * @param {*} b 
+ */
 
 
 exports.union = union;
@@ -1227,10 +1227,10 @@ var intersect = function intersect(a, b) {
   });
 };
 /**
-* 数组删除其中一个元素
-* @param {*} arr 
-* @param {*} ele 
-*/
+ * 数组删除其中一个元素
+ * @param {*} arr 
+ * @param {*} ele 
+ */
 
 
 exports.intersect = intersect;
@@ -1245,9 +1245,9 @@ var remove = function remove(arr, ele) {
   return arr;
 };
 /**
-* 将类数组转换为数组
-* @param {*} ary 
-*/
+ * 将类数组转换为数组
+ * @param {*} ary 
+ */
 
 
 exports.remove = remove;
@@ -1264,9 +1264,9 @@ var formArray = function formArray(ary) {
   return arr;
 };
 /**
-* 获取数组最大值
-* @param {*} arr 
-*/
+ * 获取数组最大值
+ * @param {*} arr 
+ */
 
 
 exports.formArray = formArray;
@@ -1275,9 +1275,9 @@ var max = function max(arr) {
   return Math.max.apply(null, arr);
 };
 /**
-* 获取数组最小值
-* @param {*} arr 
-*/
+ * 获取数组最小值
+ * @param {*} arr 
+ */
 
 
 exports.max = max;
@@ -1286,9 +1286,9 @@ var min = function min(arr) {
   return Math.min.apply(null, arr);
 };
 /**
-* 数组求和
-* @param {*} arr 
-*/
+ * 数组求和
+ * @param {*} arr 
+ */
 
 
 exports.min = min;
@@ -1299,9 +1299,9 @@ var sum = function sum(arr) {
   });
 };
 /**
-* 数组平均值
-* @param {*} arr 
-*/
+ * 数组平均值
+ * @param {*} arr 
+ */
 
 
 exports.sum = sum;
@@ -1310,10 +1310,10 @@ var average = function average(arr) {
   return _this2.sum(arr) / arr.length;
 };
 /**
-* 去空格
-* @param {*} str 
-* @param {*} type 1-所有空格 2-前后空格 3-前空格 4-后空格
-*/
+ * 去空格
+ * @param {*} str 
+ * @param {*} type 1-所有空格 2-前后空格 3-前空格 4-后空格
+ */
 
 
 exports.average = average;
@@ -1339,10 +1339,10 @@ var trim = function trim(str, type) {
   }
 };
 /**
-* 字符串转换
-* @param {*} str 
-* @param {*} type 1:首字母大写 2：首字母小写 3：大小写转换 4：全部大写 5：全部小写
-*/
+ * 字符串转换
+ * @param {*} str 
+ * @param {*} type 1:首字母大写 2：首字母小写 3：大小写转换 4：全部大写 5：全部小写
+ */
 
 
 exports.trim = trim;
@@ -1381,9 +1381,9 @@ var changeCase = function changeCase(str, type) {
   }
 };
 /**
-* 检测密码强度
-* @param {*} str 
-*/
+ * 检测密码强度
+ * @param {*} str 
+ */
 
 
 exports.changeCase = changeCase;
@@ -1414,11 +1414,11 @@ var checkPwd = function checkPwd(str) {
   return Lv;
 };
 /**
-* 函数节流器
-* @param {*} fn 
-* @param {*} time 
-* @param {*} interval 
-*/
+ * 函数节流器
+ * @param {*} fn 
+ * @param {*} time 
+ * @param {*} interval 
+ */
 
 
 exports.checkPwd = checkPwd;
@@ -1432,11 +1432,11 @@ var debouncer = function debouncer(fn, time) {
   }
 };
 /**
-* 在字符串中插入新字符串
-* @param {*} soure 
-* @param {*} index 
-* @param {*} newStr 
-*/
+ * 在字符串中插入新字符串
+ * @param {*} soure 
+ * @param {*} index 
+ * @param {*} newStr 
+ */
 
 
 exports.debouncer = debouncer;
@@ -1446,10 +1446,10 @@ var insertStr = function insertStr(soure, index, newStr) {
   return str;
 };
 /**
-* 判断两个对象是否键值相同
-* @param {*} a 
-* @param {*} b 
-*/
+ * 判断两个对象是否键值相同
+ * @param {*} a 
+ * @param {*} b 
+ */
 
 
 exports.insertStr = insertStr;
@@ -1473,10 +1473,10 @@ var isObjectEqual = function isObjectEqual(a, b) {
   return true;
 };
 /**
-* 16进制颜色转RGBRGBA字符串
-* @param {*} val 
-* @param {*} opa 
-*/
+ * 16进制颜色转RGBRGBA字符串
+ * @param {*} val 
+ * @param {*} opa 
+ */
 
 
 exports.isObjectEqual = isObjectEqual;
@@ -1507,11 +1507,11 @@ var colorToRGB = function colorToRGB(val, opa) {
   return rgbStr;
 };
 /**
-* 追加url参数
-* @param {*} url 
-* @param {*} key 
-* @param {*} value 
-*/
+ * 追加url参数
+ * @param {*} url 
+ * @param {*} key 
+ * @param {*} value 
+ */
 
 
 exports.colorToRGB = colorToRGB;
